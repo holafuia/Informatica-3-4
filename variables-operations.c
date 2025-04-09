@@ -1,22 +1,33 @@
 #include <stdio.h>
 
 int main () {
-    int width = 5;
-    int length = 9;
+    //rectangle
+    int width;
+    int length;
+
+    printf("enter rectangle width: ");
+    scanf("%d", &width);
+    printf("enter rectangle lengh: ");
+    scanf("%d", &length);
 
     int X = width*length;
     int Y = width+width+length+length;
 
-    printf("1. \n");
-    printf("Area = %d \n", X);
-    printf("Perimeter = %d \n", Y);
+    printf("Area: %d\n", X);
+    printf("Perimeter : %d\n", Y);
 
-    int F = 95;
-    int C = (F-32)/1.8;
+    //temperature
+    int Fahrenheit;
 
-    printf("2. \n");
-    printf("%d°F = %d°C\n", F, C);
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%d", &Fahrenheit);
 
+    int C= (Fahrenheit-32)/1.8;
+
+    printf("%d°F = ", Fahrenheit);
+    printf("%d°C\n", C);
+
+    //minutes and hours
     int min = 349;
     int hours = min/60;
     int minutes = 60*5;
