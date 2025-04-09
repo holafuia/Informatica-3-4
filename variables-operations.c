@@ -5,6 +5,7 @@ int main () {
     int width;
     int length;
 
+    printf("1.\n");
     printf("enter rectangle width: ");
     scanf("%d", &width);
     printf("enter rectangle lengh: ");
@@ -19,6 +20,7 @@ int main () {
     //temperature
     int Fahrenheit;
 
+    printf("2.\n");
     printf("Enter temperature in Fahrenheit: ");
     scanf("%d", &Fahrenheit);
 
@@ -28,11 +30,19 @@ int main () {
     printf("%d°C\n", C);
 
     //minutes and hours
-    int min = 349;
-    int hours = min/60;
-    int minutes = 60*5;
-    int result = min-minutes;
+    int min;
 
-    printf("3. \n");
-    printf("%d minutes is equal to %d hours and %d minutes \n", min, hours, result);
+    printf("3.");
+    printf("enter minutes: ");
+    scanf("%d", &min);
+
+    int hours = min/60;
+    int mins = min%60;
+
+    printf("%d hours and %d minutes\n", hours, mins);
+
+    //circle
+    //int radius;
+    
+    return 0;
 }
