@@ -42,7 +42,15 @@ int main () {
     printf("%d hours and %d minutes\n", hours, mins);
 
     //circle
-    //int radius;
+    int radius;
+
+    printf("4.");
+    printf("Enter the radius: ");
+    scanf("%d", &radius);
+
+    int diame = radius*2;
+    int peri= diame*3.14;
+    printf("The perimeter of the circle is %d\n", peri);
     
     return 0;
 }
