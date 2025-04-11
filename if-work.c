@@ -54,4 +54,38 @@ int main(){
     }
 
     //calculator
+    float calcu;
+
+    printf("4.\n");
+    printf("operations:\n");
+    printf("1 = addition\n");
+    printf("2 = substraction\n");
+    printf("3 = multiplication\n");
+    printf("4 = division\n");
+    printf("give the first value: ");
+    scanf("%f", &calcu);
+
+    float calcula;
+    float opera;
+
+    printf("give the second value: ");
+    scanf("%f", &calcula);
+    printf("enter the desired operation: ");
+    scanf("%f", &opera);
+
+    if(opera == 1){
+        float add = calcu+calcula;
+        printf("%.2f plus %.2f is %.2f\n", calcu, calcula, add);
+    } else if(opera == 2){
+        float sub = calcu-calcula;
+        printf("%.2f minus %.2f is %.2f\n", calcu, calcula, sub);
+    } else if(opera == 3){
+        float multi = calcu*calcula;
+        printf("%.2f multiplied by %.2f is %.2f\n", calcu, calcula, multi);
+    } else if(opera == 4){
+        float divi = calcu/calcula;
+        printf("%.2f divided by %.2f is %.2f\n", calcu, calcula, divi);
+    } else {
+        printf("invalid operation\n");
+    }
 }
