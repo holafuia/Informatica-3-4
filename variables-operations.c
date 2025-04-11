@@ -49,8 +49,8 @@ int main () {
     scanf("%d", &radius);
 
     int diame = radius*2;
-    int peri= diame*3.14;
-    printf("The perimeter of the circle is %d\n", peri);
+    float peri= diame*3.14;
+    printf("The perimeter of the circle is %.2f\n", peri);
     
     return 0;
 }
