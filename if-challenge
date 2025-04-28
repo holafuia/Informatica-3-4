@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+    int year;
+
+    printf("enter year here: ");
+    scanf("%d", &year);
+
+    int ifyear = year%4;
+    int years = year%100;
+
+    //if (ifyear == 0 && years != 0){
+    }
+}
