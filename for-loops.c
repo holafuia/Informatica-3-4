@@ -29,9 +29,9 @@ int main(){
     scanf("%d", &m);
 
     int b;
-    int fact = 0;
+    int fact = 1;
 
-    for (b = 1; b < m; ++b){
+    for (b = 1; b < m + 1; ++b){
         fact = fact * b;
     }
 
