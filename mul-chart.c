@@ -11,13 +11,22 @@ int main(){
     printf("\n");
 
     int num;
-    printf("Enter the desired nunber chart: ");
+    int mun;
+    printf("Enter the first desired number chart: ");
     scanf("%d", &num);
+    printf("Enter the second desired number chart: ");
+    scanf("%d", &mun);
+    printf("\n");
 
     int r;
     int c;
     int t = 1;
 
-    //for(r = 1; r < 9; ++r){
-        //for(c = 1; c < 9; ++c)
+    for(r = 1; r < mun + 1; ++r){
+        for(c = 1; c < num + 1; ++c){
+            t = r * c;
+            printf("%d\t", t);
+        }
+        printf("\n");
     }
+}
