@@ -24,4 +24,6 @@ int main(){
     } else if (flip != guess){
         printf("Better luck next time :)\n");
     }
+
+    return 0;
 }
